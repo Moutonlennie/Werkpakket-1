@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #dfe6e9;
+  font-size: 1rem;
+  color: #dfe6e9;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid #828282;
+  border-top: 1px solid #828282;
+  width: 100%;
+}
+nav .nav-left {
+  transform: translateY(50%);
+}
+nav .nav-left img {
+  transform: translateY(-50%);
+}
+nav .nav-left h1 {
+  float: right;
+  transform: translateY(-50%);
+}
+nav ul {
+  list-style-type: none;
+  transform: translateY(50%);
+}
+nav ul li {
+  display: inline-block;
+  transform: translateY(-50%);
+}
+nav ul li:nth-child(-n+2) {
+  transform: translateY(-100%);
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #ffdb58;
+  font-weight: bold;
+}
+nav ul li a svg {
+  width: 25px;
+  height: 25px;
+}
+nav h1 {
+  color: #68c3c0;
+  margin: -5px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+nav img {
+  width: auto;
+  height: 50px;
+}
+
+.footer-container {
+  background-color: #828282;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 10px;
+}
+.footer-container h1 {
+  font-family: "Pixelify Sans", sans-serif;
+}
+.footer-container .footer-logo img {
+  width: auto;
+  height: 100px;
+}
+.footer-container .footer-logo h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #68c3c0;
+  font-size: 2rem;
+}
+.footer-container .footer-logo h3 {
+  font-size: 1rem;
+}
+.footer-container .footer-product h1, .footer-container .footer-contact h1 {
+  color: #ffdb58;
+}
+.footer-container .footer-product ul, .footer-container .footer-contact ul {
+  list-style-type: none;
+}
+.footer-container .footer-product ul li, .footer-container .footer-contact ul li {
+  transform: translateY(50%);
+  padding: 1rem;
+}
+.footer-container .footer-product ul li a, .footer-container .footer-contact ul li a {
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #dfe6e9;
+}
+.footer-container .footer-socials h1 {
+  color: #ffdb58;
+}
+.footer-container .footer-socials ul {
+  list-style-type: none;
+}
+.footer-container .footer-socials ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+.footer-container .footer-socials ul li img {
+  width: auto;
+  height: 45px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 50px;
+  background-color: #ffdb58;
+  color: #828282;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #828282;
+  color: #ffdb58;
+}
+
+.container {
+  background-image: url("../assets/achtergrond1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.container .logo {
+  text-align: center;
+  padding-top: 10rem;
+}
+.container .logo h1 {
+  font-size: 5rem;
+  color: #68c3c0;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.container .logo h3 {
+  font-size: 1.5rem;
+}
+.container .inleiding {
+  text-align: center;
+  padding-top: 5rem;
+}
+.container .inleiding h4 {
+  font-size: 1.3rem;
+}
+.container button a {
+  text-decoration: none;
+  color: #828282;
+  transition: 1s;
+}
+.container button a:hover {
+  color: #ffdb58;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 50px;
+}
+.main-container .card {
+  margin: 10px;
+}
+.main-container .card .card-content {
+  color: #828282;
+}
+.main-container .card .card-photo img {
+  width: auto;
+  height: 300px;
+  border-radius: 0.5rem;
+}
+.main-container .card:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  transform: scale(1.1);
+}
+
+.main-content {
+  background-color: #ff6b6b;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.main-content .card-number {
+  font-size: 100px;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #ffdb58;
+}
+.main-content .why-card {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  backdrop-filter: opacity(20%);
+}
+.main-content .why-card h3 {
+  color: #68c3c0;
+}
+.main-content .why-card p {
+  margin-top: 10px;
+}
+
+section {
+  background-color: #ff6b6b;
+  padding-bottom: 10px;
+  text-align: center;
+  padding: 20px 25rem;
+}
+section h2 {
+  color: #68c3c0;
+  padding-bottom: 10px;
+}
+
+.login-img {
+  background-image: url("../assets/background-login.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  background-color: #ff6b6b;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+  transform: translate(50%, 50%);
+  margin-left: 35%;
+  text-align: center;
+}
+form a {
+  color: #dfe6e9;
+}
+form a svg {
+  float: left;
+  margin: 10px 10px;
+}
+form h1 {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #828282;
+  margin-right: 35px;
+}
+form .e-mail {
+  margin: 10px;
+}
+form .wachtwoord {
+  margin: 10px;
+}
+form label {
+  color: #ffdb58;
+}
+form .login-vergeten {
+  border-bottom: 1px solid #68c3c0;
+  margin-top: 20px;
+  color: #dfe6e9;
+}
+form .login-vergeten:hover {
+  font-weight: bold;
+}
+form .login-button {
+  margin-left: 0;
+  padding: 10px 40px;
+  font-size: 1rem;
+}
+form input {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 10px;
+}
+
+.nav-overzicht {
+  position: relative;
+}
+
+.header-overzicht {
+  text-align: center;
+}
+.header-overzicht h1 {
+  color: #68c3c0;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 5rem;
+}
+.header-overzicht p {
+  color: #828282;
+  padding: 20px 20rem;
+}
+
+.filter .filterbtn {
+  margin-left: 8rem;
+  padding: 20px 50px;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-around;
+  color: red;
+}
+.detail-container .detail-left img {
+  border-radius: 0.5rem;
+}
+.detail-container .detail-right h3 {
+  border-bottom: 1px solid salmon;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

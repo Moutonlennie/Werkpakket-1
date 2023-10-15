@@ -316,10 +316,58 @@ form input {
 }
 .detail-container .detail-left img {
   border-radius: 0.5rem;
+  height: 500px;
+  width: auto;
+  margin-top: 30%;
 }
-.detail-container .detail-right h3 {
+.detail-container .detail-right {
+  margin-top: 10%;
+  max-width: 40%;
+}
+.detail-container .detail-right .detail-titel {
+  width: 100%;
+  justify-content: space-around;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.detail-container .detail-right .detail-titel h3 {
+  display: inline-block;
+}
+.detail-container .detail-right .detail-titel #kenmerk {
+  float: right;
+}
+.detail-container .detail-right .detail-titel #beschrijving {
+  border-bottom: 3px solid tan;
+  padding: 5px;
+}
+.detail-container .detail-right .detail-beschrijving h3 {
   border-bottom: 1px solid salmon;
   padding: 5px;
+  margin: 20px;
+}
+.detail-container .detail-right .detail-beschrijving p {
+  margin: 20px;
+}
+.detail-container .detail-right .detail-beschrijving h2 {
+  text-align: center;
+  padding: 8rem;
+  font-size: 5rem;
+}
+.detail-container .detail-right .detail-kenmerken ul {
+  padding: 20px;
+}
+.detail-container .detail-right .detail-kenmerken ul li {
+  padding: 5px;
+}
+.detail-container .detail-right button {
+  margin-left: 0;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.detail-container .detail-right h2 {
+  text-align: center;
+  padding: 3rem 0 0 0;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -218,15 +218,76 @@ form {
     .detail-left {
         img {
             border-radius: 0.5rem;
+            height: 500px;
+            width: auto;
+            margin-top: 30%;
         }
 
     }
 
     .detail-right {
-        h3{
-            border-bottom: 1px solid salmon;
-            padding: 5px;
+        margin-top: 10%;
+        max-width: 40%;
+
+        .detail-titel {
+            width: 100%;
+            justify-content: space-around;
+            font-family: 'Pixelify Sans', sans-serif;
+
+            h3 {
+                display: inline-block;
+
+            }
+
+            #kenmerk {
+                float: right;
+            }
+
+            #beschrijving {
+                border-bottom: 3px solid tan;
+                padding: 5px;
+            }
         }
 
+        .detail-beschrijving {
+            h3 {
+                border-bottom: 1px solid salmon;
+                padding: 5px;
+                margin: 20px;
+            }
+            p {
+                margin: 20px;
+            }
+
+            h2 {
+                text-align: center;
+                padding: 8rem;
+                font-size: 5rem;
+            }
+        }
+
+        .detail-kenmerken {
+
+            ul {
+                padding: 20px;
+                
+                li {
+                    padding: 5px;
+                }
+            }
+        }
+
+        button {
+            margin-left: 0;
+            width: 100%;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 3rem 0 0 0 ;
+            font-size: 3rem;
+        }
     }
 }

@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
+
     <title>Detail pagina</title>
 </head>
 <body>
@@ -37,7 +46,7 @@
                     <h3 id="kenmerk">Kenmerken</h3>
                 </div>
 
-                <div class="detail-beschrijving">
+                <div class="detail-beschrijving" id="detail-beschrijving">
                     <p>Geef je Bitmoji een trendy make-over met ons Gele top met zwarte rok. Dit stijlvolle en 
                         aanpasbare item is de perfecte aanvulling op de garderobe van je digitale avatar. 
                         Of je nu je Bitmoji wilt aankleden voor een speciale gelegenheid, een grappige look wilt creëren, 
@@ -47,7 +56,7 @@
                         Bestel vandaag nog en creëer een unieke stijl voor je digitale metgezel!
                     </p>
             </div>
-            <div class="detail-kenmerken">
+            <div class="detail-kenmerken" id="detail-kenmerken">
                 <ul>
                     <li>Eenvoudige integratie met populaire messaging-apps</li>
                     <li>Volledig aanpasbaar aan je smaak en stemming</li>
@@ -59,5 +68,69 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="logo">
+                <h1>Moji Boutique</h1>
+                <h3>Breng je wereld tot leven met Moji's!</h3>
+            </div>
+             <div class="footer-product">
+                <h1>Moji's</h1>
+                <ul>
+                    <li><a href="#">Vrouwen</a></li>
+                    <li><a href="#">Mannen</a></li>
+                    <li><a href="#">Andere</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h1>Contact</h1>
+                <ul>
+                    <li><a href="#">+324 71 71 79 82</a></li>
+                    <li><a href="#">Kouterstraat 34, <br> 3400 Landen</a></li>
+                    <li><a href="#">mojiboutique@info.be</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h1>Socials</h1>
+                <ul>
+                    <li><img src="assets/facebook.png" alt="Facebook"></li>
+                    <li><img src="assets/instagram.png" alt="Instagram"></li>
+                    <li><img src="assets/snapchat.png" alt="Snapchat"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
+
+<script>
+let beschrijving = document.getElementById('beschrijving');
+let detail_kenmerken = document.getElementById('detail-kenmerken');
+
+let kenmerken = document.getElementById('kenmerk');
+let detail_beschrijving = document.getElementById('detail-beschrijving');
+
+beschrijving.addEventListener("click", function (e) {
+    detail_kenmerken.style.display = "none";
+    kenmerken.style.borderBottom = "none";
+    detail_beschrijving.style.display = "block";
+    beschrijving.style.borderBottom = "3px solid tan";
+
+    
+  });
+
+  kenmerken.addEventListener("click", function (e) {
+    detail_beschrijving.style.display = "none";
+    beschrijving.style.borderBottom = "none";
+    detail_kenmerken.style.display = "block";
+    kenmerken.style.borderBottom = "3px solid tan";
+    
+
+  });
+
+</script>

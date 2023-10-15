@@ -334,13 +334,13 @@ form input {
 }
 .detail-container .detail-right .detail-titel #kenmerk {
   float: right;
+  padding: 5px;
 }
 .detail-container .detail-right .detail-titel #beschrijving {
   border-bottom: 3px solid tan;
   padding: 5px;
 }
 .detail-container .detail-right .detail-beschrijving h3 {
-  border-bottom: 1px solid salmon;
   padding: 5px;
   margin: 20px;
 }
@@ -351,6 +351,9 @@ form input {
   text-align: center;
   padding: 8rem;
   font-size: 5rem;
+}
+.detail-container .detail-right .detail-kenmerken {
+  display: none;
 }
 .detail-container .detail-right .detail-kenmerken ul {
   padding: 20px;
@@ -363,6 +366,7 @@ form input {
   width: 100%;
   align-items: center;
   font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 .detail-container .detail-right h2 {
   text-align: center;
